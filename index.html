@@ -4,201 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fort Wayne Courses | Purdue Online Teaching Hub</title>
-    <style>
-        /* Purdue-inspired colors */
-        :root {
-            --gold: #C28E0E;
-            --black: #1D1D1B;
-            --light-gray: #F4F4F4;
-            --dark-gray: #333333;
-        }
+    <title>Dummy Website with Botpress Chatbot</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--dark-gray);
-            background-color: var(--light-gray);
-        }
-
-        header {
-            background-color: var(--black);
-            color: var(--gold);
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        nav {
-            display: flex;
-            gap: 15px;
-        }
-
-        nav a {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .banner {
-            background-color: var(--gold);
-            color: var(--black);
-            text-align: center;
-            padding: 20px;
-            font-size: 1.2em;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-top: 5px solid var(--gold);
-        }
-
-        h2 {
-            color: var(--black);
-        }
-
-        .tabs {
-            display: flex;
-            border-bottom: 2px solid var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .tab {
-            padding: 10px 15px;
-            font-weight: bold;
-            cursor: pointer;
-            color: var(--black);
-        }
-
-        .tab.active {
-            background-color: var(--gold);
-            color: white;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 10px;
-            margin: 8px 0;
-            background-color: var(--light-gray);
-            border-left: 5px solid var(--gold);
-        }
-
-        footer {
-            background-color: var(--black);
-            color: var(--gold);
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-        }
-    </style>
-    <script>
-        function showTab(index) {
-            var tabs = document.querySelectorAll('.tab');
-            var contents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach((tab, i) => {
-                tab.classList.toggle('active', i === index);
-                contents[i].classList.toggle('active', i === index);
-            });
-        }
-    </script>
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1>Purdue University</h1>
-            <p>College of Education - Online and Blended Teaching Hub</p>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Standards</a>
-            <a href="#">Badges</a>
-            <a href="#">Library</a>
-        </nav>
-    </header>
-
-    <div class="banner">
-        Online and Blended Teaching Hub
-    </div>
-
     <div class="container">
-        <h2>Learning Management Systems</h2>
-        <p>Explore the tools and resources available for effective online teaching and learning. Below are the courses
-            offered at the Fort Wayne campus specifically designed to enhance online learning strategies and
-            instructional techniques.</p>
+        <h1>Welcome to Our Dummy Website</h1>
+        <p>Interact with our Botpress Chatbot below:</p>
 
-        <div class="tabs">
-            <div class="tab active" onclick="showTab(0)">Overview/Video</div>
-            <div class="tab" onclick="showTab(1)">Printables</div>
-            <div class="tab" onclick="showTab(2)">Web Resources</div>
-        </div>
-
-        <div class="tab-content active">
-            <h3>Overview</h3>
-            <p>Learning Management Systems (LMS) are platforms that facilitate the delivery of content and the
-                management of courses for online and blended learning. Through these systems, instructors can create and
-                share learning materials, manage assignments, and support communication with students.</p>
-            <h3>Courses Offered</h3>
-            <ul>
-                <li><strong>Introduction to Learning Management Systems</strong></li>
-                <li><strong>Data Science and Analytics in Education</strong></li>
-                <li><strong>Advanced Instructional Technology</strong></li>
-                <li><strong>Assessment and Evaluation Methods</strong></li>
-                <li><strong>Educational Psychology</strong></li>
-                <li><strong>Digital Content Development</strong></li>
-                <li><strong>Teaching with Emerging Technologies</strong></li>
-            </ul>
-        </div>
-
-        <div class="tab-content">
-            <h3>Printables</h3>
-            <p>Download resources and printable materials to aid in teaching and learning with LMS platforms.</p>
-        </div>
-
-        <div class="tab-content">
-            <h3>Web Resources</h3>
-            <p>Discover additional online resources, including articles, tutorials, and video guides for optimizing your
-                use of Learning Management Systems.</p>
-        </div>
+        <!-- Botpress Chatbot Embed -->
+        <div id="bp-web-widget"></div>
+        <button onclick="triggerFileUploadOnLoad()">Upload</button>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Purdue University | College of Education</p>
-    </footer>
 
     <!-- Read PDF file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
     <!-- Botpress Chatbot Scripts -->
 
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/24/02/20241024024158-EISKNU0M.js"></script> -->
+
+
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2024/10/13/02/20241013020524-FE9FLNIK.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/17/19/20241017195725-SWWT38BY.js"></script>
 
 
     <script>
@@ -234,14 +64,17 @@
                     console.log('File name:', title);
                     console.log('File type:', type_of_doc)
 
-                    if (type_of_doc === 'application/pdf') {
+                    if (type_of_doc === 'application/pdf') 
+                    {
                         const pdfData = new Uint8Array(event.target.result);
-                        fileContent = await extractPDFText(pdfData);
+                        fileContent = await extractPDFText(pdfData); 
                     }
-                    else if (type_of_doc === 'application/txt') {
-                        fileContent = event.target.result;
+                    else if(type_of_doc === 'application/txt')
+                    {
+                        fileContent= event.target.result;
                     }
-                    else {
+                    else 
+                    {
                         errorMessage = 'Please upload the supported files. pdf and txt only'
                     }
 
@@ -273,7 +106,7 @@
             const textContent = await page.getTextContent();
             let pageText = '';
             textContent.items.forEach(function (item) {
-                pageText += item.str + ' '; // Append each line of text
+            pageText += item.str + ' '; // Append each line of text
             });
             return pageText;
         }
@@ -286,9 +119,9 @@
 
             // Loop through all pages
             for (let i = 1; i <= pdf.numPages; i++) {
-                const page = await pdf.getPage(i);
-                const pageText = await getTextFromPage(page); // Extract text from the current page
-                fullText += pageText + '\n'; // Append text to the full document text
+            const page = await pdf.getPage(i);
+            const pageText = await getTextFromPage(page); // Extract text from the current page
+            fullText += pageText + '\n'; // Append text to the full document text
             }
 
             return fullText; // Return the complete extracted text
